@@ -15,6 +15,14 @@
               25202328
           {% elif is_state("input_select.harmony_livingroom", "Media") %}
               25202413
+          {% elif is_state("input_select.harmony_livingroom", "Bluethooth audio") %}
+              33707413
+          {% elif is_state("input_select.harmony_livingroom", "Nintendo Switch") %}
+              31114578
+          {% elif is_state("input_select.harmony_livingroom", "Nintendo Wii") %}
+              28115329
+          {% elif is_state("input_select.harmony_livingroom", "(S)NES") %}
+              25316389
           {% endif %}
     - service: input_select.select_option
       entity_id: input_select.harmony_livingroom
