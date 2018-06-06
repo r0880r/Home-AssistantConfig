@@ -1,0 +1,6 @@
+- platform: harmony
+  name: harmony_livingroom
+  host: 10.254.10.34
+  activity: TV Kijken
+  scan_interval: 5
+

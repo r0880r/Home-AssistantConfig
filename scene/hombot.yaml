@@ -1,0 +1,6 @@
+- name: hombot_start
+  entities:
+    switch.hombot_control: on
+- name: hombot_home
+  entities:
+    switch.hombot_control: off

@@ -1,0 +1,12 @@
+# Switch couch lights on 75 min before sunset
+- alias: lights_couch_on_1_hour_before_sunset
+  initial_state: 'off'
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-01:15:00"
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.milight_livingroom_couch
+

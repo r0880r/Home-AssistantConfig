@@ -1,0 +1,23 @@
+- platform: rfxtrx
+  devices:
+    0b110000009fc4aa01010f70:
+      # KAKU - ACD-300 Stekkerdoos dimmer
+      name: rfxtrx_garden_patio_spots
+    0b110004009fc4aa06010f70:
+      # KAKU - AWMD-250 Mini inbouw dimmer multi
+      name: rfxtrx_livingroom_ceiling
+    0b110006009fc4aa07010f60:
+      # KAKU - AWMD-250 Mini inbouw dimmer multi
+      name: rfxtrx_kitchen_ceiling
+#    0b110006009fc4aa10000050:
+#      # KAKU - AWMR-300 Mini inbouw schakelaar
+#      name: rfxtrx_bedroom_ceiling
+    0b110000009fc4aa03010f60:
+      name: rfxtrx_garden_main
+    0b110008009fc4aa02010f70:
+      # KAKU - AGDR-3500 Stekkerdoos schakelaar (buiten)
+      name: rfxtrx_garden_path
+#    0b110003012abbd602010f50:
+#      # KAKU - ACM-100 Inbouwdimmer multi
+#      name: rfxtrx_bedroom_closet
+

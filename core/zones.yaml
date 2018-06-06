@@ -1,0 +1,5 @@
+- name: Xcellent
+  latitude: !secret xcellent_latitude
+  longitude: !secret xcellent_longitude
+  radius: 50
+

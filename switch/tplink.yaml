@@ -1,0 +1,3 @@
+- platform: tplink
+  host: 10.254.10.40
+  name: tplink_hs110_washer

@@ -1,0 +1,289 @@
+## Views
+#home_view:
+#  view: yes
+#  entities:
+#    - group.shortcuts
+
+livingroom_view:
+  view: yes
+  entities:
+    - group.livingroom_lights
+    - group.livingroom_sunscreen
+    - group.harmony_livingroom
+    - group.hall_lights
+    - group.hombot
+    - group.family
+    - media_player.denonavr_livingroom
+
+kitchen_view:
+  view: yes
+  entities:
+    - group.kitchen_lights
+
+garden_view:
+  view: yes
+  entities:
+    - group.garden_lights
+    - group.weather
+
+bedroom_view:
+  view: yes
+  entities:
+    - group.bedroom_lights
+    - group.bedroom_temp
+    - media_player.slaapkamer
+
+first_floor_view:
+  view: yes
+  entities:
+    - group.first_floor_lights
+
+#bathroom_view:
+#  view: yes
+
+#nursery_view:
+#  view: yes
+#  entities:
+#    - camera.ipcam02
+
+car_view:
+  view: yes
+  entities:
+    - group.car_comfort
+    - group.car_energy
+    - group.car_info
+    - group.car_location
+
+infrastructure_view:
+  view: yes
+  entities:
+    - group.pihole
+    - group.sslcerts
+    - group.battery_devices
+    - group.wireless_switches
+
+appliances_view:
+  view: yes
+  entities:
+    - group.washer
+
+security_view:
+  view: yes
+  entities:
+    - group.doorsensors
+    - group.motionsensors
+
+media_view:
+  view: yes
+  entities:
+    - group.sonarr
+    - media_player.shield_android_tv
+    - media_player.shield
+    - media_player.slaapkamer
+
+unused_view:
+  view: yes
+  entities:
+    - group.unused_switches
+    - group.unused_sensors
+    - group.unsued_remotes
+    - group.unused_lights
+
+## Carts
+#shortcuts:
+#  control: hidden
+#  entities:
+
+livingroom_lights:
+  control: hidden
+  entities:
+    - light.milight_livingroom_couch
+    - light.rfxtrx_livingroom_ceiling
+
+livingroom_sunscreen:
+  control: hidden
+  entities:
+    - switch.rfxtrx_sunscreen
+
+garden_lights:
+  control: hidden
+  entities:
+    - light.milight_garden_main
+    - light.rfxtrx_garden_path
+    - light.rfxtrx_garden_patio_spots
+
+bedroom_lights:
+  control: hidden
+  entities:
+    - light.tradfri_e27_rgb_01
+    - light.group_bedroom_closet
+
+bedroom_temp:
+  control: hidden
+  entities:
+    - sensor.temperature_158d0001fa5a0d
+    - sensor.humidity_158d0001fa5a0d
+    - sensor.pressure_158d0001fa5a0d
+
+kitchen_lights:
+  control: hidden
+  entities:
+    - light.rfxtrx_kitchen_ceiling
+
+washer:
+  entities:
+    - sensor.washer_running
+    - sensor.tplink_hs110_washer_watts
+
+weather:
+  entities:
+    - sun.sun
+    - sensor.br_temperature
+    - sensor.br_symbol
+    - sensor.br_humidity
+    - sensor.br_precipitation_forecast_total
+
+pihole:
+  entities:
+    - switch.pihole_switch
+    - sensor.pihole_ads_blocked_today
+    - sensor.pihole_ads_percentage_blocked_today
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_dns_unique_clients
+    - sensor.pihole_domains_blocked
+
+sonarr:
+  entities:
+    - sensor.sonarr_series
+    - sensor.sonarr_wanted
+
+sslcerts:
+   entities:
+     - sensor.cert_expiry_hass_vanhamersveld_nu
+     - sensor.cert_expiry_nextcloud_vanhamersveld_nu
+
+hombot:
+  entities:
+    - sensor.hombot_status
+    - sensor.hombot_battery
+    - scene.hombot_start
+    - scene.hombot_home
+    - weblink.hombot
+
+harmony_livingroom:
+  entities:
+    - sensor.harmony_livingroom_activity  
+    - input_select.harmony_livingroom
+
+hall_lights:
+  entities:
+    - light.tradfri_e27_ww_01
+
+first_floor_lights:
+  control: hidden
+  entities:
+    - light.tradfri_e27_ww_02
+    - light.tradfri_gu10_ww_01
+  
+family:
+  entities:
+    - device_tracker.iphone_rob_iosapp
+    - device_tracker.iphone_sanne_iosapp
+
+doorsensors:
+  entities:
+#    - binary_sensor.binary_doorcontact_frontdoor
+#    - binary_sensor.door_window_sensor_158d0001de6fbe
+
+motionsensors:
+  entities:
+    - binary_sensor.motion_sensor_158d0001e55530
+
+lightsensors:
+  entities:
+    - sensor.illumination_158d0001e55530
+
+car_energy:
+  entities:
+    - binary_sensor.wvwzzzauzgw803726_external_power
+    - switch.wvwzzzauzgw803726_charging
+    - sensor.wvwzzzauzgw803726_battery_level
+    - sensor.wvwzzzauzgw803726_charge_max_ampere
+    - sensor.wvwzzzauzgw803726_charging_time_left
+    - sensor.wvwzzzauzgw803726_electric_range
+
+car_comfort:
+  entities:
+    -  binary_sensor.wvwzzzauzgw803726_climatisation_without_external_power
+    - switch.wvwzzzauzgw803726_climatisation
+    - switch.wvwzzzauzgw803726_window_heater
+    - sensor.wvwzzzauzgw803726_climatisation_target_temperature
+
+car_info:
+  entities:
+    - lock.wvwzzzauzgw803726_doors_locked
+    - lock.wvwzzzauzgw803726_trunk_locked
+    - binary_sensor.wvwzzzauzgw803726_parking_light
+    - sensor.wvwzzzauzgw803726_odometer
+    - sensor.wvwzzzauzgw803726_service_inspection
+    - device_tracker.wvwzzzauzgw803726
+    - sensor.wvwzzzauzgw803726_last_connected
+
+car_location:
+  entities:
+    - camera.vwgte
+
+battery_devices:
+  control: hidden
+  entities:
+    - sensor.tradfri_remote_control
+    - sensor.door_window_sensor_158d0001de6fbe_battery_level
+    - sensor.switch_158d000120d652_battery_level
+    - sensor.temperature_158d0001fa5a0d_battery_level
+
+wireless_switches:
+  entities:
+    - binary_sensor.door_window_sensor_158d0001de6fbe
+    - binary_sensor.switch_158d000120d652
+
+unused_switches:
+  control: hidden
+  entities:
+    - switch.tplink_hs110_washer
+    - switch.hombot_control
+    - switch.rfxtrx_doorbell
+    - switch.rfxtrx_doorcontact_frontdoor
+
+unused_lights:
+  control: hidden
+  entities:
+    - light.rfxtrx_garden_main
+    - light.gateway_light_7811dcb35daa
+    - light.tradfri_gu10_ww_02
+    - light.tradfri_gu10_ww_03
+    - light.tradfri_gu10_ww_04
+
+unused_sensors:
+  entities:
+    - sensor.time
+    - sensor.tplink_hs110_washer_amps
+    - sensor.tplink_hs110_washer_kw
+    - sensor.tplink_hs110_washer_volts
+#    - sensor.power_production
+#    - sensor.power_production_low
+#    - sensor.power_production_normal
+#    - sensor.power_tariff
+    - sensor.br_stationname
+    - sensor.iphone_rob_battery_level
+    - sensor.iphone_rob_battery_state
+    - sensor.iphone_van_sanne_battery_level
+    - sensor.iphone_van_sanne_battery_state
+    - sensor.pihole_dns_queries_cached
+    - sensor.pihole_dns_unique_domains
+    - sensor.pihole_dns_queries_forwarded
+    - sensor.vw_WVWZZZAUZGW803726_last_connected
+    - sensor.illumination_7811dcb35daa
+
+unused_remotes:
+  entities:
+    - remote.harmony_livingroom

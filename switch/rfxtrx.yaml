@@ -1,0 +1,15 @@
+- platform: rfxtrx
+  automatic_add: True
+  devices:
+    0b110000008e672e0c010f70:
+      # KAKU - ACDB-7000B Drukknopzender
+      name: rfxtrx_doorbell
+      fire_event: True
+    0b1100000141f5fe0a010f50:
+      # KAKU - AMST-606 Draadloos magneetcontact
+      name: rfxtrx_doorcontact_frontdoor
+      fire_event: True
+    0b110000009fc4aa05010f60:
+      # KAKU - ASUN-650 Zonwering schakelaar
+      name: rfxtrx_sunscreen
+

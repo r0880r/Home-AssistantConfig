@@ -1,0 +1,36 @@
+# Use the input select to start the selected activity of the Harmony Hub
+- alias: media_harmony_livingroom_start_activity
+  trigger:
+    - platform: state
+      entity_id: input_select.harmony_livingroom
+      from: 'Select activity'
+  action:
+    - service: remote.turn_on
+      entity_id: remote.harmony_livingroom
+      data_template:
+        activity: >
+          {% if is_state("input_select.harmony_livingroom", "Internet Radio") %}
+              25216255
+          {% elif is_state("input_select.harmony_livingroom", "Tv Kijken") %}
+              25202328
+          {% elif is_state("input_select.harmony_livingroom", "Media") %}
+              25202413
+          {% endif %}
+    - service: input_select.select_option
+      entity_id: input_select.harmony_livingroom
+      data_template:
+        option: 'Select activity'
+
+# Use the input select to power off the Harmony activity
+- alias: media_harmony_livingroom_poweroff
+  trigger:
+    platform: state
+    entity_id: input_select.harmony_livingroom
+    to: 'Power Off'
+  action:
+    - service: remote.turn_off
+      entity_id: remote.harmony_livingroom
+    - service: input_select.select_option
+      entity_id: input_select.harmony_livingroom
+      data_template:
+        option: "Select activity"

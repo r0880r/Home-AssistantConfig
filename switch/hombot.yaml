@@ -1,0 +1,5 @@
+- platform: command_line
+  switches:
+    hombot_control:
+      command_on: "curl http://10.254.10.41:6260/json.cgi?%7b%22COMMAND%22:%22CLEAN_START%22%7d"
+      command_off: "curl http://10.254.10.41:6260/json.cgi?%7b%22COMMAND%22:%22HOMING%22%7d"

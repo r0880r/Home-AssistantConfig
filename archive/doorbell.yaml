@@ -1,0 +1,18 @@
+- alias: doorbell_notify
+  trigger:
+    platform: event
+    event_type: button_pressed
+    event_data: {"entity_id": "switch.rfxtrx_doorbell"}
+  action:
+    - service: notify.woonkamer_tv
+      data:
+        message: Iemand heeft op de deurbel gedrukt.
+    - service: notify.ios_iphone_rob_iosapp
+      data:
+        title: "Deurbel"
+        message: "Om {{ states.sensor.time.state }} is er op de deurbel gedrukt"
+    - service: notify.ios_iphone_sanne_iosapp
+      data:
+        title: "Deurbel"
+        message: "Om {{ states.sensor.time.state }} is er op de deurbel gedrukt"
+

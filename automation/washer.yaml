@@ -1,0 +1,20 @@
+- alias: washer_finished
+  trigger:
+    platform: state
+    entity_id: sensor.washer_running
+    from: 'True'
+    to: 'False'
+    for:
+      minutes: 1
+  action:
+    - service: notify.woonkamer_tv
+      data:
+        message: De wasmachine is klaar.
+    - service: notify.ios_iphone_rob_iosapp
+      data:
+        title: "Wasmachine"
+        message: "Ik ben klaar met wassen!"
+    - service: notify.ios_iphone_sanne_iosapp
+      data:
+        title: "Wasmachine"
+        message: "Ik ben klaar met wassen!"

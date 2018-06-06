@@ -1,0 +1,5 @@
+#- platform: template
+#  sensors:
+#    binary_doorcontact_frontdoor:
+#      value_template: "{{ states.switch.rfxtrx_doorcontact_frontdoor.state == 'on' }}"
+#      device_class: opening

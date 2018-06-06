@@ -1,0 +1,12 @@
+- platform: template
+  sensors:
+    door_window_sensor_158d0001de6fbe_battery_level:
+      unit_of_measurement: '%'
+      value_template: "{{ states.binary_sensor.door_window_sensor_158d0001de6fbe.attributes.battery_level }}"
+    switch_158d000120d652_battery_level:
+      unit_of_measurement: '%'
+      value_template: "{{ states.binary_sensor.switch_158d000120d652.attributes.battery_level }}"
+    temperature_158d0001fa5a0d_battery_level:
+      unit_of_measurement: '%'
+      value_template: "{{ states.sensor.temperature_158d0001fa5a0d.attributes.battery_level }}"
+    

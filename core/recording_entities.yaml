@@ -1,0 +1,17 @@
+   - sun.sun
+# TP-link washer sensor
+   - sensor.tplink_hs110_washer_amps
+   - sensor.tplink_hs110_washer_kw
+   - sensor.tplink_hs110_washer_volts
+   - sensor.tplink_hs110_washer_watts
+   - sensor.washer_running
+# HomBot
+   - sensor.hombot_status
+   - sensor.hombot_battery
+# Buienradar
+   - sensor.br_temperature
+   - sensor.br_humidity
+# Doorsensor history
+   - switch.rfxtrx_doorcontact_frontdoor
+# Doorbell
+   - switch.rfxtrx_doorbell

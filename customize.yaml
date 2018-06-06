@@ -1,0 +1,309 @@
+# Groups
+#group.energy:
+#  friendly_name: Energie
+group.weather:
+  friendly_name: Weer (buienradar)
+group.washer:
+  friendly_name: Wasmachine
+group.pihole:
+  friendly_name: Pi-Hole
+#group.smoke_detectors:
+#  friendly_name: Brandmelders
+group.sonarr:
+  friendly_name: Sonarr
+group.sslcerts:
+  friendly_name: SSL Certificaten
+group.hombot:
+  friendly_name: LG HomBot
+group.harmony_livingroom:
+  friendly_name: Afstandsbediening
+#group.thermostat:
+#  friendly_name: Thermostaat
+group.livingroom_lights:
+  friendly_name: Woonkamer verlichting
+group.garden_lights:
+  friendly_name: Tuin verlichting
+group.kitchen_lights:
+  friendly_name: Keuken verlichting
+group.livingroom_sunscreen:
+  friendly_name: Zonnescherm
+group.bedroom_lights:
+  friendly_name: Slaapkamer verlichting
+group.bedroom_temp:
+  friendly_name: Slaapkamer conditie
+group.motionsensors:
+  friendly_name: Bewegingssensoren
+group.car_comfort:
+  friendly_name: Comfort
+  control: hidden
+group.car_info:
+  friendly_name: Status
+group.car_energy:
+  friendly_name: Hybride systeem
+group.hall_lights:
+  friendly_name: Hal verlichting
+group.first_floor_lights:
+  friendly_name: 1e verdieping verlichting
+group.wireless_switches:
+  friendly_name: Draadloze schakelaars
+group.battery_devices:
+  friendly_name: Batterij status
+
+group.infrastructure_view:
+  icon: mdi:settings
+group.garden_view:
+  icon: mdi:tree
+group.kitchen_view:
+  icon: mdi:pot
+group.bedroom_view:
+  icon: mdi:hotel
+group.first_floor_view:
+  icon: mdi:floor-plan
+group.bathroom_view:
+  icon: mdi:water-pump
+group.appliances_view:
+  icon: mdi:power-plug
+group.media_view:
+  icon: mdi:movie
+group.livingroom_view:
+  icon: mdi:home
+group.nursery_view:
+  icon: mdi:baby
+group.car_view:
+  icon: mdi:car
+group.security_view:
+  icon: mdi:security-home
+group.unused_view:
+  icon: mdi:do-not-disturb
+
+## Switches
+#switch.tplink_hs110_washer:
+#switch.hombot_control:
+
+#switch.rfxtrx_doorbell
+#switch.rfxtrx_doorcontact_frontdoor
+switch.rfxtrx_sunscreen:
+  friendly_name: Zonnescherm
+
+switch.pihole_switch:
+  friendly_name: Pi-Hole status
+
+switch.wvwzzzauzgw803726_charging:
+  friendly_name: GTE Laden
+switch.wvwzzzauzgw803726_climatisation:
+  friendly_name: GTE Klimatiseren
+switch.wvwzzzauzgw803726_window_heater:
+  friendly_name: GTE Ruitverwarming
+
+## Lights
+light.milight_garden_main:
+  friendly_name: Tuin verlichting
+light.milight_livingroom_couch:
+  friendly_name: Woonkamer bank
+
+light.rfxtrx_garden_patio_spots:
+  friendly_name: Tuin overkapping
+light.rfxtrx_livingroom_ceiling:
+  friendly_name: Woonkamer plafondlamp
+light.rfxtrx_kitchen_ceiling:
+  friendly_name: Keuken plafondlamp
+#light.rfxtrx_garden_main:
+light.rfxtrx_garden_path:
+  friendly_name: Tuin pad spots
+
+light.tradfri_e27_rgb_01:
+  friendly_name: Slaapkamer plafondlamp
+light.tradfri_e27_ww_01:
+  friendly_name: Hal plafondlamp
+light.tradfri_e27_ww_02:
+  friendly_name: 1e verdieping hal plafondlamp
+light.tradfri_gu10_ww_01:
+  friendly_name: 1e verdieping kamer plafondlamp
+
+light.group_bedroom_closet:
+  friendly_name: Slaapkamer kast
+ 
+### Sensors
+## TP-link HS110
+#sensor.tplink_hs110_washer_amps:
+#sensor.tplink_hs110_washer_kw:
+#sensor.tplink_hs110_washer_volts:
+sensor.tplink_hs110_washer_watts:
+  friendly_name: Wasmachine huidig verbruik
+sensor.washer_running:
+  friendly_name: Wasmachine actief
+
+# Hombot
+sensor.hombot_status:
+  friendly_name: HomBot status
+sensor.hombot_battery:
+  friendly_name: HomBot accu
+  icon: mdi:battery-charging
+
+#sun.sun:
+
+## Time Date
+# time - sensors/date_time.yaml
+#sensor.time:
+
+## Pi-Hole sensors/pi-hole.yaml
+sensor.pihole_ads_blocked_today:
+  friendly_name: PiHole blocked queries
+sensor.pihole_ads_percentage_blocked_today:
+  friendly_name: PiHole block percentage
+sensor.pihole_dns_queries_today:
+  friendly_name: PiHole DSN queries
+#sensor.pihole_dns_queries_cached:
+#sensor.pihole_dns_queries_forwarded:
+sensor.pihole_dns_unique_clients:
+  friendly_name: PiHole unique clients
+#sensor.pihole_dns_unique_domains:
+sensor.pihole_domains_blocked:
+  friendly_name: PiHole domains blocked
+
+## Sonarr sensors/sonarr.yaml
+#sensor.sonarr_wanted:
+#sensor.sonarr_series:
+
+## SSL Certs sensors/cert_expiry.yaml
+#sensor.cert_expiry_hass_robvanhamersveld_nl:
+#  friendly_name: hass.robvanhamersveld.nl
+sensor.cert_expiry_hass_vanhamersveld_nu:
+  friendly_name: SSL hass.vanhamersveld.nu
+sensor.cert_expiry_nextcloud_vanhamersveld_nu:
+  friendly_name: SSL nextcloud.vanhamersveld.nu
+
+## Harmony sensors/harmony.yaml
+sensor.harmony_livingroom_activity:
+  friendly_name: Woonkamer huidige activiteit
+  icon: mdi:remote
+
+## Buienradar sensors/buienradar.yaml
+sensor.br_humidity:
+  friendly_name: Luchtvochtigheid
+sensor.br_precipitation_forecast_total:
+  friendly_name: Verwachte neerslag
+#sensor.br_stationname:
+sensor.br_symbol:
+  friendly_name: Weer
+sensor.br_temperature:
+  friendly_name: Buiten temperatuur
+
+## Xioami Aqara sensors
+# Humanbody scanner 1
+sensor.illumination_158d0001e55530:
+  friendly_name: Woonkamer lichtsterkte
+
+# Temperture sensor 1
+sensor.temperature_158d0001fa5a0d:
+  friendly_name: Slaapkamer temperatuur
+sensor.humidity_158d0001fa5a0d:
+  friendly_name: Slaapkamer vochtigheid
+sensor.pressure_158d0001fa5a0d:
+  friendly_name: Slaapkamer luchtdruk
+
+## VW Carnet
+sensor.wvwzzzauzgw803726_battery_level:
+  friendly_name: GTE accu
+sensor.wvwzzzauzgw803726_charge_max_ampere:
+  friendly_name: GTE Max laad amperage
+sensor.wvwzzzauzgw803726_charging_time_left:
+  friendly_name: GTE Resterende laadtijd
+sensor.wvwzzzauzgw803726_climatisation_target_temperature:
+  friendly_name: GTE Target temp
+sensor.wvwzzzauzgw803726_odometer:
+  friendly_name: GTE Kilometerstand
+sensor.wvwzzzauzgw803726_electric_range:
+  friendly_name: GTE Actieradius electrisch
+sensor.wvwzzzauzgw803726_last_connected:
+  friendly_name: GTE laatste connectie
+sensor.wvwzzzauzgw803726_service_inspection:
+  friendly_name: GTE Volgende inspectie
+
+### Climate
+## Eneco Toon
+#climate.toon_van_eneco:
+
+### Remotes
+## Logitech Harmony livingroom
+#remote.harmony_livingroom:
+
+### Media players
+## Denon AVR X1300w livingroom
+#media_player.denon_avrx1300w:
+## Nvidia shield livingroom - Chromecast?
+#media_player.shield:
+## Nvidia shield livingroom - Plex client?
+#media_player.shield_android_tv:
+## Philips 55PUS6516 Living room - Chromecast
+media_player.woonkamer:
+  hidden: true
+## Chromecast Bedroom
+#media_player.slaapkamer:
+
+### Cameras
+camera.ipcam01:
+  friendly_name: Woonkamer
+camera.ipcam02:
+  friendly_name: Babykamer
+camera.vwgte:
+  friendly_name: Volkswagen GTE locatie
+
+### Zones
+# zone.xcellent:
+# zone.home:
+
+### Scenes
+scene.hombot_start:
+  friendly_name: HomBot Start
+  icon: mdi:run
+scene.hombot_home:
+  friendly_name: HomBot Terug naar lader
+  icon: mdi:home
+
+### Input Select
+input_select.harmony_livingroom:
+  friendly_name: Start activiteit
+
+### Automations
+#automation.media_harmony_livingroom_start_activity:
+#automation.media_harmony_livingroom_poweroff:
+
+### Scripts
+#
+
+### Device Trackers
+## Rob
+# iPhone iOS app
+#device_tracker.iphone_rob_iosapp:
+#device_tracker.iphone_sanne_iosapp:
+device_tracker.WVWZZZAUZGW803726:
+  friendly_name: GTE Locatie
+
+### Binary Sensors
+#
+#binary_sensor.binary_doorcontact_frontdoor:
+#  friendly_name: Voordeur
+#  icon: mdi:glassdoor
+
+binary_sensor.motion_sensor_158d0001e55530:
+  friendly_name: Woonkamer beweging
+
+binary_sensor.door_window_sensor_158d0001de6fbe:
+  friendly_name: Slaapkamer hoofdschakelaar
+
+binary_sensor.wvwzzzauzgw803726_climatisation_without_external_power:
+  friendly_name: GTE Klimatisering zonder laadkabel
+binary_sensor.wvwzzzauzgw803726_parking_light:
+  friendly_name: GTE Verlichting
+binary_sensor.wvwzzzauzgw803726_external_power:
+  friendly_name: GTE Laadkabel
+
+### Locks
+lock.wvwzzzauzgw803726_doors_locked:
+  friendly_name: GTE Deurvergendeling
+lock.wvwzzzauzgw803726_trunk_locked:
+  friendly_name: GTE Kofferbakvergrendeling
+###Weblinks
+weblink.hombot:
+  friendly_name: HomBot Admin

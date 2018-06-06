@@ -1,0 +1,3 @@
+entities:
+  - name: HomBot
+    url: http://10.254.10.41:6260

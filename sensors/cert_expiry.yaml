@@ -1,0 +1,6 @@
+- platform: cert_expiry
+  name: cert_expiry_nextcloud_vanhamersveld_nu
+  host: nextcloud.vanhamersveld.nu
+- platform: cert_expiry
+  name: cert_expiry_hass_vanhamersveld_nu
+  host: hass.vanhamersveld.nu

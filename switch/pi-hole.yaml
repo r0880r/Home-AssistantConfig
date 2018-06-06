@@ -1,0 +1,8 @@
+- platform: command_line
+  switches:
+    pihole_switch:
+      command_on: "curl -X GET 'http://10.254.10.25/admin/api.php?enable&auth='"
+      command_off: "curl -X GET 'http://10.254.10.25/admin/api.php?disable=3600&auth='"
+      command_state: "curl -X GET 'http://10.254.10.25/admin/api.php?status'"
+      value_template: "{{ value_json.status == 'enabled' }}"
+

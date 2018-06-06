@@ -1,0 +1,4 @@
+- platform: template
+  sensors:
+    harmony_livingroom_activity:
+      value_template: '{{ states.remote.harmony_livingroom.attributes.current_activity }}'

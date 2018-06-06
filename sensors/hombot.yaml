@@ -1,0 +1,11 @@
+- platform: command_line
+  command: "curl http://10.254.10.41:6260/status.txt | awk 'NR==2' | awk -F'=' '{print $2}' | awk -F'\"' '{print $2}'"
+  name: hombot_battery
+  unit_of_measurement: "%"
+- platform: command_line
+  command: "curl http://10.254.10.41:6260/status.txt | awk 'NR==1' | awk -F'=' '{print $2}' | awk -F'\"' '{print $2}'"
+  name: hombot_status
+#- platform: command_line
+#  command: "curl http://10.254.10.41:6260/status.txt | awk 'NR==17' | awk -F'=' '{print $2}' | awk -F'\"' '{print $2}'"
+#  name: hombot_lastclean
+#  value_template: {{ value.split('/')[2] }}/{{ value.split('/')[1] }}/{{ value.split('/')[0] }} {{ value.split('/')[3] }}:{{ value.split('/')[4] }}

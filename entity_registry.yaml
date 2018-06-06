@@ -1,0 +1,100 @@
+sensor.iphone_rob_battery_state:
+  name:
+  platform: ios
+  unique_id: state_iPhone_rob_iosapp
+sensor.iphone_rob_battery_level:
+  name:
+  platform: ios
+  unique_id: level_iPhone_rob_iosapp
+sensor.iphone_van_sanne_battery_state:
+  name:
+  platform: ios
+  unique_id: state_iphone_sanne_iosapp
+sensor.iphone_van_sanne_battery_level:
+  name:
+  platform: ios
+  unique_id: level_iphone_sanne_iosapp
+binary_sensor.door_window_sensor_158d0001de6fbe:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001de6fbe
+sensor.temperature_158d0001fa5a0d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa5a0d
+sensor.illumination_7811dcb35daa:
+  name:
+  platform: xiaomi_aqara
+  unique_id: illumination7811dcb35daa
+sensor.pressure_158d0001fa5a0d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa5a0d
+sensor.humidity_158d0001fa5a0d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa5a0d
+light.gateway_light_7811dcb35daa:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgb7811dcb35daa
+binary_sensor.motion_sensor_158d0001e55530:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e55530
+binary_sensor.switch_158d000120d652:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000120d652
+sensor.illumination_158d0001e55530:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001e55530
+sensor.br_symbol:
+  name:
+  platform: buienradar
+  unique_id: 52.1863065.389163symbol
+sensor.br_humidity:
+  name:
+  platform: buienradar
+  unique_id: 52.1863065.389163humidity
+sensor.br_temperature:
+  name:
+  platform: buienradar
+  unique_id: 52.1863065.389163temperature
+sensor.br_stationname:
+  name:
+  platform: buienradar
+  unique_id: 52.1863065.389163stationname
+sensor.br_precipitation_forecast_total:
+  name:
+  platform: buienradar
+  unique_id: 52.1863065.389163precipitation_forecast_total
+light.tradfri_e27_rgb_01:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65539
+light.tradfri_gu10_ww_01:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65540
+light.tradfri_gu10_ww_04:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65543
+light.tradfri_e27_ww_01:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65537
+light.tradfri_e27_ww_02:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65538
+light.tradfri_gu10_ww_02:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65541
+light.tradfri_gu10_ww_03:
+  name:
+  platform: tradfri
+  unique_id: light-7e215152044000b0-65542

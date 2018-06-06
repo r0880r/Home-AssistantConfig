@@ -1,0 +1,29 @@
+#- platform: template
+#  sensors:
+#    tplink_hs110_washer_amps:
+#      value_template: '{{ states.switch.tplink_hs110_washer.attributes["current"] | replace(" A", "") | float }}'
+#      unit_of_measurement: 'A'
+#    tplink_hs110_washer_watts:
+#      value_template: '{{ states.switch.tplink_hs110_washer.attributes["current_consumption"] | replace(" W", "") | float }}'
+#      unit_of_measurement: 'W'
+#    tplink_hs110_washer_kw:
+#      value_template: '{{ states.switch.tplink_hs110_washer.attributes["total_consumption"] | replace(" kW", "") | float }}'
+#      unit_of_measurement: 'kW'
+#    tplink_hs110_washer_volts:
+#      value_template: '{{ states.switch.tplink_hs110_washer.attributes["voltage"] | replace(" V", "") | float }}'
+#      unit_of_measurement: 'V'
+- platform: template
+  sensors:
+    tplink_hs110_washer_amps:
+      value_template: '{{ states.switch.tplink_hs110_washer.attributes["current_a"] }}'
+      unit_of_measurement: 'A'
+    tplink_hs110_washer_watts:
+      value_template: '{{ states.switch.tplink_hs110_washer.attributes["current_power_w"] }}'
+      unit_of_measurement: 'W'
+    tplink_hs110_washer_kw:
+      value_template: '{{ states.switch.tplink_hs110_washer.attributes["total_energy_kwh"] }}'
+      unit_of_measurement: 'kW'
+    tplink_hs110_washer_volts:
+      value_template: '{{ states.switch.tplink_hs110_washer.attributes["voltage"] | replace(" V", "") | float }}'
+      unit_of_measurement: 'V'
+

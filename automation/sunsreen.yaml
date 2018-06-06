@@ -1,0 +1,14 @@
+# Sunscreen up 45 min before sunset
+- alias: sunscreen_up_90min_before_sunset
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-01:30:00"
+  condition:
+    condition: state
+    entity_id: switch.rfxtrx_sunscreen
+    state: 'on'
+  action:
+    service: switch.turn_off
+    entity_id:
+      - switch.rfxtrx_sunscreen

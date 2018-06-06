@@ -1,0 +1,13 @@
+- platform: limitlessled
+  bridges:
+    - host: !secret limitlessled_host
+      port: 8899
+      version: 5
+      groups:
+      - number: 1
+        name: milight_garden_main
+        type: rgbw
+      - number: 2
+        name: milight_livingroom_couch
+        type: rgbw
+

@@ -1,0 +1,119 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: !secret time_zone
+  customize: !include customize.yaml
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# https://home-assistant.io/components/http/
+http:
+  api_password: !secret api_password
+  base_url: !secret base_url
+  ip_ban_enabled: True
+  login_attempts_threshold: 3
+  trusted_networks:
+    - 127.0.0.1
+
+# https://home-assistant.io/components/updater/
+updater:
+  reporting: False
+
+# https://home-assistant.io/components/discovery/
+#discovery:
+#  ignore:
+#    - harmony
+#    - denonavr
+#    - belkin_wemo
+
+recorder: !include core/recorder.yaml
+
+# https://home-assistant.io/components/history/
+# Enables support for tracking state changes over time.
+history:
+
+# https://home-assistant.io/components/logbook/
+# View all events in a logbook
+logbook:
+
+# https://home-assistant.io/components/influxdb/ 
+#influxdb: !include core/influxdb.yaml
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  client_id: !secret mqtt_client_id
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+
+rfxtrx:
+  device: /dev/ttyUSB-RFX433
+
+# Track the sun
+sun:
+
+#telegram_bot:
+#  platform: polling
+#  api_key: !secret telegram_api_key
+#  allowed_chat_ids:
+#    - !secret telegram_rob_chat_id
+#    - !secret telegram_sanne_chat_id
+
+#logger:
+#  default: critical
+#  logs:
+#    custom_components.volkswagen_carnet: debug
+
+xiaomi_aqara:
+  interface: '10.254.12.28'
+  discovery_retry: 5
+  gateways:
+#    - mac: !secret xiaomi_gw01_mac
+    - key: !secret xiaomi_gw01_key
+
+tradfri:
+  host: 10.254.12.14
+  allow_tradfri_groups: false
+
+map:
+
+ios:
+  push:
+    categories:
+      - name: testaction
+        identifier: 'testaction'
+        actions:
+          - identifier: 'SNOOZE'
+            title: 'snooze'
+          - identifier: 'DONE'
+            title: 'done'
+
+light: !include_dir_merge_list light
+scene: !include_dir_merge_list scene
+homekit: !include core/homekit.yaml
+remote: !include core/remote.yaml
+zone: !include core/zones.yaml
+group: !include groups.yaml
+automation: !include_dir_merge_list automation
+switch: !include_dir_merge_list switch
+sensor: !include_dir_merge_list sensors
+camera: !include camera.yaml
+media_player: !include core/media_player.yaml
+notify: !include core/notify.yaml
+input_select: !include input_select.yaml
+script: !include script.yaml
+binary_sensor: !include_dir_merge_list binary_sensors
+weblink: !include core/weblink.yaml
+
+# Volkswagen Carnet https://github.com/robinostlund/homeassistant-volkswagen-carnet
+volkswagen_carnet:
+  username: !secret volkswagen_carnet_username
+  password: !secret volkswagen_carnet_password
+ 

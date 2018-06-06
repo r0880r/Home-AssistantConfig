@@ -1,0 +1,11 @@
+# Notify Android TV (used in livingroom)
+- name: woonkamer_tv
+  platform: nfandroidtv
+  host: 10.254.10.30
+
+- name: notify_all
+  platform: group
+  services:
+    - service: woonkamer_tv
+    - service: ios_iphone_rob_iosapp
+    - service: ios_iphone_sanne_iosapp

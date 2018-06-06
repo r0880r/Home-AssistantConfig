@@ -1,0 +1,6 @@
+- platform: group
+  name: group_bedroom_closet
+  entities:
+   - light.tradfri_gu10_ww_02
+   - light.tradfri_gu10_ww_03
+   - light.tradfri_gu10_ww_04

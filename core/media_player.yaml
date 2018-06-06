@@ -1,0 +1,5 @@
+# https://home-assistant.io/components/media_player.denonavr/
+- platform: denonavr
+#- platform: denon
+  name: denonavr_livingroom
+  host: 10.254.10.31
