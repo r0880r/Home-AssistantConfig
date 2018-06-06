@@ -82,8 +82,8 @@ group.unused_view:
 
 #switch.rfxtrx_doorbell
 #switch.rfxtrx_doorcontact_frontdoor
-switch.rfxtrx_sunscreen:
-  friendly_name: Zonnescherm
+#switch.rfxtrx_sunscreen:
+#  friendly_name: Zonnescherm
 
 switch.pihole_switch:
   friendly_name: Pi-Hole status
@@ -307,3 +307,7 @@ lock.wvwzzzauzgw803726_trunk_locked:
 ###Weblinks
 weblink.hombot:
   friendly_name: HomBot Admin
+
+### Covers
+cover.sunscreen:
+  friendly_name: Zonnescherm

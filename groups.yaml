@@ -103,7 +103,7 @@ livingroom_lights:
 livingroom_sunscreen:
   control: hidden
   entities:
-    - switch.rfxtrx_sunscreen
+    - cover.sunscreen
 
 garden_lights:
   control: hidden
@@ -253,6 +253,7 @@ unused_switches:
     - switch.hombot_control
     - switch.rfxtrx_doorbell
     - switch.rfxtrx_doorcontact_frontdoor
+    - switch.rfxtrx_sunscreen
 
 unused_lights:
   control: hidden

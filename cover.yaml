@@ -1,0 +1,18 @@
+- platform: template
+  covers:
+    sunscreen:
+      value_template: >-
+        {% if states.switch.rfxtrx_sunscreen.state == 'off' %}
+          open
+        {% else %}
+          closed
+        {% endif %}
+      open_cover:
+        service: switch.turn_off
+        data:
+          entity_id: switch.rfxtrx_sunscreen
+      close_cover:
+        service: switch.turn_on
+        data:
+          entity_id: switch.rfxtrx_sunscreen
+
