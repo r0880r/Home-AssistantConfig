@@ -125,13 +125,23 @@ light.group_bedroom_closet:
  
 ### Sensors
 ## TP-link HS110
+sensor.rova_gft:
+  friendly_name: GFT afval
+sensor.rova_rest:
+  friendly_name: Rest afval
+sensor.rova_papier:
+  friendly_name: Papier afval
+
 #sensor.tplink_hs110_washer_amps:
 #sensor.tplink_hs110_washer_kw:
 #sensor.tplink_hs110_washer_volts:
 sensor.tplink_hs110_washer_watts:
   friendly_name: Wasmachine huidig verbruik
-sensor.washer_running:
-  friendly_name: Wasmachine actief
+#sensor.washer_running:
+#  friendly_name: Wasmachine actief
+
+binary_sensor.washer_running:
+  friendly_name: Wasmachine
 
 # Hombot
 sensor.hombot_status:

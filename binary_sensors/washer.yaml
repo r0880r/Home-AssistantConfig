@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    washer_running:
+      delay_off:
+        minutes: 1
+      value_template: "{{ states('sensor.tplink_hs110_washer_watts') | int > 2.5 }}"

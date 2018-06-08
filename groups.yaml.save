@@ -54,6 +54,14 @@ car_view:
     - group.car_info
     - group.car_location
 
+infrastructure_view:
+  view: yes
+  entities:
+    - group.pihole
+    - group.sslcerts
+    - group.battery_devices
+    - group.wireless_switches
+
 appliances_view:
   view: yes
   entities:
@@ -72,15 +80,6 @@ media_view:
     - media_player.shield_android_tv
     - media_player.shield
     - media_player.slaapkamer
-
-infrastructure_view:
-  view: yes
-  entities:
-    - group.pihole
-    - group.sslcerts
-    - group.battery_devices
-    - group.wireless_switches
-    - group.test
 
 unused_view:
   view: yes
@@ -104,7 +103,7 @@ livingroom_lights:
 livingroom_sunscreen:
   control: hidden
   entities:
-    - cover.sunscreen
+    - switch.rfxtrx_sunscreen
 
 garden_lights:
   control: hidden
@@ -133,7 +132,7 @@ kitchen_lights:
 
 washer:
   entities:
-    - binary_sensor.washer_running
+    - sensor.washer_running
     - sensor.tplink_hs110_washer_watts
 
 weather:
@@ -215,7 +214,7 @@ car_energy:
 
 car_comfort:
   entities:
-    -  binary_sensor.wvwzzzauzgw803726_climatisation_without_external_power
+    - binary_sensor.wvwzzzauzgw803726_climatisation_without_external_power
     - switch.wvwzzzauzgw803726_climatisation
     - switch.wvwzzzauzgw803726_window_heater
     - sensor.wvwzzzauzgw803726_climatisation_target_temperature
@@ -223,7 +222,6 @@ car_comfort:
 car_info:
   entities:
     - lock.wvwzzzauzgw803726_doors_locked
-    - lock.wvwzzzauzgw803726_trunk_locked
     - binary_sensor.wvwzzzauzgw803726_parking_light
     - sensor.wvwzzzauzgw803726_odometer
     - sensor.wvwzzzauzgw803726_service_inspection
@@ -247,10 +245,6 @@ wireless_switches:
     - binary_sensor.door_window_sensor_158d0001de6fbe
     - binary_sensor.switch_158d000120d652
 
-test:
-  entities:
-    - input_boolean.test
-
 unused_switches:
   control: hidden
   entities:
@@ -258,7 +252,6 @@ unused_switches:
     - switch.hombot_control
     - switch.rfxtrx_doorbell
     - switch.rfxtrx_doorcontact_frontdoor
-    - switch.rfxtrx_sunscreen
 
 unused_lights:
   control: hidden
