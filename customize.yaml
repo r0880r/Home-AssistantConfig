@@ -9,8 +9,6 @@ group.pihole:
   friendly_name: Pi-Hole
 #group.smoke_detectors:
 #  friendly_name: Brandmelders
-group.sonarr:
-  friendly_name: Sonarr
 group.sslcerts:
   friendly_name: SSL Certificaten
 group.hombot:
@@ -170,10 +168,6 @@ sensor.pihole_dns_unique_clients:
 #sensor.pihole_dns_unique_domains:
 sensor.pihole_domains_blocked:
   friendly_name: PiHole domains blocked
-
-## Sonarr sensors/sonarr.yaml
-#sensor.sonarr_wanted:
-#sensor.sonarr_series:
 
 ## SSL Certs sensors/cert_expiry.yaml
 #sensor.cert_expiry_hass_robvanhamersveld_nl:

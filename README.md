@@ -1,11 +1,13 @@
 # Home-Assistant-Configuration
 In this repo you find my current [Home Assistant](https://home-assistant.io) configuration
 
-Home Assistant Version: 0.48.1
+Home Assistant Version: 0.71.0
 
 # Devices
 ## Lights
 * MiLight
+* Ikea Tradfri
+* RFXTRX dimmers and switches
 ## Switches
 * TP-Link HS110
 ## Media players and AV

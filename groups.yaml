@@ -68,7 +68,6 @@ security_view:
 media_view:
   view: yes
   entities:
-    - group.sonarr
     - media_player.shield_android_tv
     - media_player.shield
     - media_player.slaapkamer
@@ -152,11 +151,6 @@ pihole:
     - sensor.pihole_dns_queries_today
     - sensor.pihole_dns_unique_clients
     - sensor.pihole_domains_blocked
-
-sonarr:
-  entities:
-    - sensor.sonarr_series
-    - sensor.sonarr_wanted
 
 sslcerts:
    entities:
