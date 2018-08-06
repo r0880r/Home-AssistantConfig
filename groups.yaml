@@ -24,7 +24,7 @@ garden_view:
   view: yes
   entities:
     - group.garden_lights
-    - group.weather
+    - weather.de_bilt
 
 bedroom_view:
   view: yes
@@ -64,6 +64,7 @@ security_view:
   entities:
     - group.doorsensors
     - group.motionsensors
+    - group.smokedetectors
 
 media_view:
   view: yes
@@ -99,6 +100,7 @@ livingroom_lights:
   entities:
     - light.milight_livingroom_couch
     - light.rfxtrx_livingroom_ceiling
+    - light.yeelight_livingroom_ceiling
 
 livingroom_sunscreen:
   control: hidden
@@ -115,8 +117,7 @@ garden_lights:
 bedroom_lights:
   control: hidden
   entities:
-    - light.tradfri_e27_rgb_01
-    - light.group_bedroom_closet
+    - light.yeelight_tw_01
 
 bedroom_temp:
   control: hidden
@@ -134,14 +135,6 @@ washer:
   entities:
     - binary_sensor.washer_running
     - sensor.tplink_hs110_washer_watts
-
-weather:
-  entities:
-    - sun.sun
-    - sensor.br_temperature
-    - sensor.br_symbol
-    - sensor.br_humidity
-    - sensor.br_precipitation_forecast_total
 
 pihole:
   entities:
@@ -169,16 +162,15 @@ harmony_livingroom:
   entities:
     - sensor.harmony_livingroom_activity  
     - input_select.harmony_livingroom
+    - sensor.shieldtv_app
 
 hall_lights:
   entities:
-    - light.tradfri_e27_ww_01
+    - light.yeelight_rgb_01
 
 first_floor_lights:
   control: hidden
   entities:
-    - light.tradfri_e27_ww_02
-    - light.tradfri_gu10_ww_01
   
 family:
   entities:
@@ -193,6 +185,11 @@ doorsensors:
 motionsensors:
   entities:
     - binary_sensor.motion_sensor_158d0001e55530
+
+smokedetectors:
+  entities:
+    - binary_sensor.smoke_sensor_158d0001e862d9
+    - binary_sensor.smoke_sensor_158d000231d3d7
 
 lightsensors:
   entities:
@@ -231,7 +228,6 @@ car_location:
 battery_devices:
   control: hidden
   entities:
-    - sensor.tradfri_remote_control
     - sensor.door_window_sensor_158d0001de6fbe_battery_level
     - sensor.switch_158d000120d652_battery_level
     - sensor.temperature_158d0001fa5a0d_battery_level
@@ -259,9 +255,6 @@ unused_lights:
   entities:
     - light.rfxtrx_garden_main
     - light.gateway_light_7811dcb35daa
-    - light.tradfri_gu10_ww_02
-    - light.tradfri_gu10_ww_03
-    - light.tradfri_gu10_ww_04
 
 unused_sensors:
   entities:
@@ -283,6 +276,7 @@ unused_sensors:
     - sensor.pihole_dns_queries_forwarded
     - sensor.vw_WVWZZZAUZGW803726_last_connected
     - sensor.illumination_7811dcb35daa
+    - sun.sun
 
 unused_remotes:
   entities:

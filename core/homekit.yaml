@@ -6,11 +6,15 @@ filter:
   exclude_entities:
     - light.gateway_light_7811dcb35daa
     - light.rfxtrx_garden_main
+    - light.tradfri_gu10_ww_02
+    - light.tradfri_gu10_ww_03
+    - light.tradfri_gu10_ww_04
     - switch.hombot_control
     - switch.pihole_switch
     - switch.rfxtrx_doorbell
     - switch.rfxtrx_doorcontact_frontdoor
+    - switch.rfxtrx_sunscreen
     - switch.tplink_hs110_washer
-    - switch.vw_wvwzzzauzgw803726_charge
-    - switch.vw_wvwzzzauzgw803726_climat
-    - switch.vw_wvwzzzauzgw803726_melt
+    - switch.wvwzzzauzgw803726_charging
+    - switch.wvwzzzauzgw803726_climatisation
+    - switch.wvwzzzauzgw803726_window_heater

@@ -1,14 +1,12 @@
 # Groups
 #group.energy:
 #  friendly_name: Energie
-group.weather:
-  friendly_name: Weer (buienradar)
 group.washer:
   friendly_name: Wasmachine
 group.pihole:
   friendly_name: Pi-Hole
-#group.smoke_detectors:
-#  friendly_name: Brandmelders
+group.smokedetectors:
+  friendly_name: Brandmelders
 group.sslcerts:
   friendly_name: SSL Certificaten
 group.hombot:
@@ -101,25 +99,20 @@ light.milight_livingroom_couch:
 
 light.rfxtrx_garden_patio_spots:
   friendly_name: Tuin overkapping
-light.rfxtrx_livingroom_ceiling:
-  friendly_name: Woonkamer plafondlamp
+#light.rfxtrx_livingroom_ceiling:
+#  friendly_name: Woonkamer plafondlamp
 light.rfxtrx_kitchen_ceiling:
   friendly_name: Keuken plafondlamp
 #light.rfxtrx_garden_main:
 light.rfxtrx_garden_path:
   friendly_name: Tuin pad spots
 
-light.tradfri_e27_rgb_01:
+light.yeelight_livingroom_ceiling:
+  friendly_name: Woonkamer plafondlamp
+light.yeelight_tw_01:
   friendly_name: Slaapkamer plafondlamp
-light.tradfri_e27_ww_01:
-  friendly_name: Hal plafondlamp
-light.tradfri_e27_ww_02:
-  friendly_name: 1e verdieping hal plafondlamp
-light.tradfri_gu10_ww_01:
-  friendly_name: 1e verdieping kamer plafondlamp
-
-light.group_bedroom_closet:
-  friendly_name: Slaapkamer kast
+light.yeelight_rgb_01:
+  friendly_name: Hall plafondlamp
  
 ### Sensors
 ## TP-link HS110
@@ -181,17 +174,6 @@ sensor.cert_expiry_nextcloud_vanhamersveld_nu:
 sensor.harmony_livingroom_activity:
   friendly_name: Woonkamer huidige activiteit
   icon: mdi:remote
-
-## Buienradar sensors/buienradar.yaml
-sensor.br_humidity:
-  friendly_name: Luchtvochtigheid
-sensor.br_precipitation_forecast_total:
-  friendly_name: Verwachte neerslag
-#sensor.br_stationname:
-sensor.br_symbol:
-  friendly_name: Weer
-sensor.br_temperature:
-  friendly_name: Buiten temperatuur
 
 ## Xioami Aqara sensors
 # Humanbody scanner 1
@@ -302,6 +284,11 @@ binary_sensor.wvwzzzauzgw803726_parking_light:
   friendly_name: GTE Verlichting
 binary_sensor.wvwzzzauzgw803726_external_power:
   friendly_name: GTE Laadkabel
+
+binary_sensor.smoke_sensor_158d0001e862d9:
+  friendly_name: Rookmelder woonkamer
+binary_sensor.smoke_sensor_158d000231d3d7:
+  friendly_name: Rookmelder 1e verdieping
 
 ### Locks
 lock.wvwzzzauzgw803726_doors_locked:

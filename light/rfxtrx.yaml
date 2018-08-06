@@ -3,9 +3,9 @@
     0b110000009fc4aa01010f70:
       # KAKU - ACD-300 Stekkerdoos dimmer
       name: rfxtrx_garden_patio_spots
-    0b110004009fc4aa06010f70:
-      # KAKU - AWMD-250 Mini inbouw dimmer multi
-      name: rfxtrx_livingroom_ceiling
+#    0b110004009fc4aa06010f70:
+#      # KAKU - AWMD-250 Mini inbouw dimmer multi
+#      name: rfxtrx_livingroom_ceiling
     0b110006009fc4aa07010f60:
       # KAKU - AWMD-250 Mini inbouw dimmer multi
       name: rfxtrx_kitchen_ceiling

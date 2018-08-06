@@ -1,0 +1,16 @@
+- platform: yeelight
+  devices:
+    10.254.12.71:
+      name: yeelight_livingroom_ceiling
+      model: ceiling1
+#      transition: 1000
+#      use_music_mode: True
+    10.254.12.72:
+      name: yeelight_rgb_01
+      model: color2
+      transition: 1000
+      use_music_mode: True
+    10.254.12.73:
+      name: yeelight_tw_01
+      model: mono
+      use_music_mode: True

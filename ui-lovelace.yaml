@@ -1,0 +1,21 @@
+name: Our Awesom Home
+
+views:
+  - name: livingroom
+    cards:
+      - type: entity-filter
+        filter:
+          - domain: light
+            entity_id: '*livingroom*'
+        card_config:
+          title: Livingroom lights
+      - type: weather-forecast
+        entity: weather.de_bilt
+  - name: bedroom
+    cards:
+      - type: entity-filter
+        filter:
+          - domain: light
+            entity_id: '*bedroom*'
+        card_config:
+          title: Bedroom lights

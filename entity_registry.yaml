@@ -1,100 +1,160 @@
 sensor.iphone_rob_battery_state:
+  config_entry_id:
   name:
   platform: ios
   unique_id: state_iPhone_rob_iosapp
 sensor.iphone_rob_battery_level:
+  config_entry_id:
   name:
   platform: ios
   unique_id: level_iPhone_rob_iosapp
 sensor.iphone_van_sanne_battery_state:
+  config_entry_id:
   name:
   platform: ios
   unique_id: state_iphone_sanne_iosapp
 sensor.iphone_van_sanne_battery_level:
+  config_entry_id:
   name:
   platform: ios
   unique_id: level_iphone_sanne_iosapp
 binary_sensor.door_window_sensor_158d0001de6fbe:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: status158d0001de6fbe
 sensor.temperature_158d0001fa5a0d:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001fa5a0d
 sensor.illumination_7811dcb35daa:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: illumination7811dcb35daa
 sensor.pressure_158d0001fa5a0d:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001fa5a0d
 sensor.humidity_158d0001fa5a0d:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001fa5a0d
 light.gateway_light_7811dcb35daa:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: rgb7811dcb35daa
 binary_sensor.motion_sensor_158d0001e55530:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: status158d0001e55530
 binary_sensor.switch_158d000120d652:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: status158d000120d652
 sensor.illumination_158d0001e55530:
+  config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: lux158d0001e55530
 sensor.br_symbol:
+  config_entry_id:
   name:
   platform: buienradar
   unique_id: 52.1863065.389163symbol
 sensor.br_humidity:
+  config_entry_id:
   name:
   platform: buienradar
   unique_id: 52.1863065.389163humidity
 sensor.br_temperature:
+  config_entry_id:
   name:
   platform: buienradar
   unique_id: 52.1863065.389163temperature
 sensor.br_stationname:
+  config_entry_id:
   name:
   platform: buienradar
   unique_id: 52.1863065.389163stationname
 sensor.br_precipitation_forecast_total:
+  config_entry_id:
   name:
   platform: buienradar
   unique_id: 52.1863065.389163precipitation_forecast_total
 light.tradfri_e27_rgb_01:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65539
 light.tradfri_gu10_ww_01:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65540
 light.tradfri_gu10_ww_04:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65543
 light.tradfri_e27_ww_01:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65537
 light.tradfri_e27_ww_02:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65538
 light.tradfri_gu10_ww_02:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65541
 light.tradfri_gu10_ww_03:
+  config_entry_id:
   name:
   platform: tradfri
   unique_id: light-7e215152044000b0-65542
+media_player.shield:
+  config_entry_id: e3832550e85245038c91b8ec0b7a550f
+  name:
+  platform: cast
+  unique_id: 8ac098f3-6ef4-311d-bbd1-1a8247c93449
+media_player.woonkamer:
+  config_entry_id: e3832550e85245038c91b8ec0b7a550f
+  name:
+  platform: cast
+  unique_id: 08da1fe3-02a1-6a31-48a0-b3db8d5a740b
+media_player.slaapkamer:
+  config_entry_id: e3832550e85245038c91b8ec0b7a550f
+  name:
+  platform: cast
+  unique_id: cba51938-f553-fc32-b933-a2cf05c5c2d1
+media_player.iphone_rob:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: 01C42A27-FAC3-456E-96C1-09B363EEE502
+binary_sensor.smoke_sensor_158d0001e862d9:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: alarm158d0001e862d9
+binary_sensor.smoke_sensor_158d000231d3d7:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: alarm158d000231d3d7
+media_player.shield_android_tv:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: 7c809554bf4b4296-com-plexapp-android

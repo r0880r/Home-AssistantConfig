@@ -27,11 +27,12 @@ updater:
   reporting: False
 
 # https://home-assistant.io/components/discovery/
-#discovery:
-#  ignore:
-#    - harmony
-#    - denonavr
-#    - belkin_wemo
+discovery:
+  ignore:
+    - harmony
+    - denonavr
+    - belkin_wemo
+    - yeelight
 
 recorder: !include core/recorder.yaml
 
@@ -66,10 +67,10 @@ sun:
 #    - !secret telegram_rob_chat_id
 #    - !secret telegram_sanne_chat_id
 
-#logger:
-#  default: critical
-#  logs:
-#    cover: debug
+logger:
+  default: warn
+  logs:
+    yeelight: debug
 
 xiaomi_aqara:
   interface: '10.254.12.28'
@@ -77,10 +78,6 @@ xiaomi_aqara:
   gateways:
 #    - mac: !secret xiaomi_gw01_mac
     - key: !secret xiaomi_gw01_key
-
-tradfri:
-  host: 10.254.12.14
-  allow_tradfri_groups: false
 
 map:
 
@@ -94,6 +91,11 @@ ios:
             title: 'snooze'
           - identifier: 'DONE'
             title: 'done'
+
+weather:
+  - platform: buienradar
+    name: 'De Bilt'
+    forecast: True
 
 light: !include_dir_merge_list light
 scene: !include_dir_merge_list scene
